@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica HTML</title>
+</head>
+<style>
+    p {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    label {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+
+    }
+
+    h1,
+    h2,
+    h3 {
+        color: rgb(255, 255, 255);
+    }
+
+    a {
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+    }
+
+    body {
+        background-image: url("https://wallpaperaccess.com/full/1268183.jpg");
+        background-size: fill;
+        background-repeat: repeat;
+        background-position: center center;
+    }
+</style>
+
+<body>
+
+    <div align="right">
+
+        <a href="Inicio.html">Inicio</a>&nbsp
+        <a href="Pasteleria.html">Nuestros productos</a>&nbsp
+        <a href="Formulario.html">Compra con nosotros</a>&nbsp
+        <a href="Pastelero.html">Pedidos</a>&nbsp
+        <a href="FAQ.html">FAQ</a>&nbsp
+    </div>
+    <br><br>
+    <center>
+        <img src="./assets/img/Logo.png" alt="Logo pasteleria" width=200>
+    </center>
+    <h1 align=center>¡Realiza tu pedido ahora!</h1>
+    <form action="/accion.js" id="form1" method="post">
+        <div align="center">
+            <label for="Input1"> Nombre Completo</label><br>
+            <input type="text" placeholder="Ingresa tu nombre" id="Input1" name="Input1"><br><br>
+
+            <label for="correo">Correo electrónico</label><br>
+            <input type="email" placeholder="Ejemplo@hotmail.com" id="correo" name="correo"><br><br>
+
+            <label for="cantidad">Cantidad de pasteles</label><br>
+            <input type="number" placeholder="Cantidad" id="cantidad" name="cantidad"><br><br>
+
+            <label for="tel1">Numero de teléfono</label><br>
+            <input type="tel" placeholder="Telefono a 10 Digitos" id="tel1" name="tel1" maxlength="10"><br><br>
+
+            <label for="fecha">Elija el día para la entrega</label><br>
+            <input type="date" id="fecha" name="fecha"><br>
+
+            <br><label for="Sabor">Eliga el sabor</label><br>
+            <select id="Sabor" name="Sabor">
+                <option value="Vía Láctea">Vía Láctea ($300.00)</option>
+                <option value="Tierra">Tierra ($150.00)</option>
+                <option value="Asteroide">Asteroide ($250.00)</option>
+                <option value="Andrómeda">Andrómeda ($230.00)</option>
+                <option value="Big Bang">Big Bang ($200.00)</option>
+            </select><br><br><br>
+            <label for="decoracion">¿Le gustaría agregar una decoración?</label><br>
+            <select id="decoracion" name="decoracion">
+                <option value="Ninguno"> Ninguna</option>
+                <option value="Fondant">Chispas de chocolate ($70)</option>
+                <option value="Sprinkles">Crema pastelera ($35)</option>
+                <option value="Chispas de chocolate">Fondant ($100)</option>
+                <option value="Buttercream">Sprinkles ($50)</option>
+            </select><br><br>
+
+            <label for="Input2">En qué dirección requiere el pedido</label><br>
+            <input type="text" placeholder="Calle y número" id="Input2" name="Input2"><br><br>
+
+            <label for="Input3">¿Algún dato que desea agregar?</label><br>
+            <input type="text" placeholder="Datos adicionales" id="Input3" name="Input3"><br><br>
+
+            <input type="button" id="boton1" name="boton1" value="Realizar pedido"
+                onclick="alert('Se ha enviado el pedido');"><br><br>
+            <br><input type="reset"><br>
+    </form>
+    </div>
+    <br>
+
+    <hr><br>
+    <div align="Center">
+        <footer>
+            <p>Pasteles Galácticos</p>
+        </footer>
+</body>
+
+</html>
